@@ -3,10 +3,10 @@
 }
 
 body{
-  background-color: #858585;
+  background-color: #0A0800;
 }
 .brand{
-  height: 50px;
+  height: 70px;
 }
 .listaAnclas{
   display: flex;
@@ -15,7 +15,7 @@ body{
   justify-content: space-evenly;
 }
 .navegador{
-  background-color: #D04392;
+  background-color: #D6D2C1;
 }
 .lista{
   padding: 20px;
@@ -24,19 +24,40 @@ body{
 .ancla{
   text-decoration: none;
   color: #000;
-  font-family: 'Abril Fatface', cursive;
-  font-size: 20px;
+  font-family: 'Zen Loop', cursive;
+  font-weight: bold;
+  font-size: 25px;
 }
 .imgCarrito{
   height: 30px;
 }
-.titulo{
+
+.nombre, .descripcion, .precio, .contador{
   display: flex;
   justify-content: center;
+  font-family: 'Abril Fatface', cursive;
+  color: #DBD7C5;
+  margin: 10px;
+  
+}
+.titulo, .subtitulo{
+  display: flex;
+  justify-content: center;
+  color: #735702;
+  font-family: 'Abril Fatface', cursive;
+  
+}
+.titulo{
+  padding: 10px;
+  margin-bottom: 5px;
+}
+.subtitulo{
+  font-size: 18px;
+  padding: 10px;
 }
  .productos{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
 }
 .contador{
   display: flex;
