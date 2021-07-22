@@ -1,6 +1,6 @@
 import './App.css'; 
 import Navegador from './components/pages/NavBar'
-import ItemListContainer from './components/pages/ItemListContainer';
+import ItemList from './components/pages/ItemList';
 
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
       <h1 style= {{color: 'white'}} className= "titulo">Tienda Expeliarmus</h1>
       <h2 style= {{color: 'white'}} className= "subtitulo">Productos oficiales de Harry Potter</h2>
       <div className="contenedor">
-        <ItemListContainer />
+        <ItemList/>
       </div>
    </div>
 

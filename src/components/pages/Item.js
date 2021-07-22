@@ -1,19 +1,19 @@
 import React from 'react'
-import {useState} from 'react'
+import ItemCount from './ItemCount';
 
-export default function Item(props){
-    const [itemCount, setItemCount] = useState (1);
-    return (
-        <div>
-            <h1 className="nombre">{props.titulo}</h1>
-            <p className="precio">{props.descripcion}</p>
-            <p className="descripcion">{props.precio}</p>
-            <button type="button"className="resta" onClick = {() => {setItemCount(itemCount - 1)}}>-</button>
-            <input type="number" className="cantidadSeleccionada"  disabled value = {itemCount} />
-            <button className="suma" onClick = {() => {setItemCount(itemCount + 1)}}>+</button>
+
+
+export default function Producto (props){
+   
+    const {titulo, descripcion, precio, img} = props.producto;
+    return(
+        <section className="producto">
+            <h1 className="nombreProducto">{titulo}</h1>
+            <h2 className="descripcionProducto">{descripcion}</h2>
+            <h2 className="precioProducto">{precio}</h2>
+            <img src={img} className="fotoProducto"/>
+            <ItemCount />
             
-
-        </div>
+        </section>
     )
 }
-
