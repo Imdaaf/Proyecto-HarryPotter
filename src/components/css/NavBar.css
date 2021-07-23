@@ -1,0 +1,31 @@
+.brand {
+    height: 70px;
+}
+
+.listaAnclas {
+    display: flex;
+    flex-direction: row;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: space-evenly;
+}
+
+.navegador {
+    background-color: #D6D2C1;
+}
+
+.lista {
+    padding: 20px;
+    list-style: none;
+}
+
+.ancla {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Zen Loop', cursive;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.imgCarrito {
+    height: 30px;
+}

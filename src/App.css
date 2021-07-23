@@ -1,36 +1,13 @@
 *{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body{
   background-color: #0A0800;
 }
-.brand{
-  height: 70px;
-}
-.listaAnclas{
-  display: flex;
-  flex-direction: row;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  justify-content: space-evenly;
-}
-.navegador{
-  background-color: #D6D2C1;
-}
-.lista{
-  padding: 20px;
-  list-style: none;
-}
-.ancla{
-  text-decoration: none;
-  color: #000;
-  font-family: 'Zen Loop', cursive;
-  font-weight: bold;
-  font-size: 25px;
-}
-.imgCarrito{
-  height: 30px;
-}
+
 
 .titulo, .subtitulo{
   display: flex;
@@ -39,58 +16,4 @@ body{
   font-family: 'Abril Fatface', cursive;
   
 }
-.nombreProducto{
-  text-align: start;
-  color: #735702;
-  font-family: 'Abril Fatface', cursive;
-  font-size: 25px;
-}
-.descripcionProducto{
-   text-align: start;
-   color: #f1f1f0;
-   font-family: 'Abril Fatface',
-   cursive;
-   font-size: 22px;
-}
-.precioProducto{
-  text-align: start;
-  color: #f1f1f0;
-  font-family: 'Abril Fatface',
-  cursive;
-  font-size: 20px;
-}
-.fotoProducto{
-  width: 300px;
-  height: 300px;
-}
-.contador{
-  display: flex;
-  flex-direction: row;
-}
-.cantidadSeleccionada{
-  text-align: center;
-  font-family: 'Abril Fatface',
-  cursive;
-  font-size: 15px;
-  color: #f1f1f0;
-}
-.suma, .resta{
-  padding: 10px;
-  margin: 10px;
-  
-}
 
-.todosproductos {
-  width: 90vw;
-  color: #D6D2C1;
-  max-width: 1170px;
-  margin: 10px auto;
-  padding: 10px;
-  display: grid;
-  gap: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .todosproductos {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}

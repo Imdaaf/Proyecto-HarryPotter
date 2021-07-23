@@ -1,6 +1,6 @@
 import React from 'react'
 import ItemCount from './ItemCount';
-
+import '../css/Item.css'
 
 
 export default function Producto (props){

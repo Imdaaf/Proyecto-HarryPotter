@@ -1,0 +1,59 @@
+.nombreProducto {
+    text-align: start;
+    color: #735702;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 25px;
+}
+
+.descripcionProducto {
+    text-align: start;
+    color: #f1f1f0;
+    font-family: 'Abril Fatface',
+        cursive;
+    font-size: 18px;
+}
+
+.precioProducto {
+    text-align: start;
+    color: #f1f1f0;
+    font-family: 'Abril Fatface',
+        cursive;
+    font-size: 20px;
+}
+
+.fotoProducto {
+    width: 300px;
+    height: 300px;
+}
+
+.contador {
+    display: flex;
+    flex-direction: row;
+}
+
+.cantidadSeleccionada {
+    text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 15px;
+    color: #f1f1f0;
+}
+
+.suma, .resta {
+    padding: 10px;
+    margin: 10px;
+
+}
+.todosproductos {
+    width: 90vw;
+    color: #D6D2C1;
+    max-width: 1170px;
+    margin: 10px auto;
+    padding: 10px;
+    display: grid;
+}
+
+@media screen and (min-width: 768px) {
+    .todosproductos {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}

@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import Producto from './Item'
 
-const listaProductos = [
+
+export default function ListadoProductos (){
+    const listaProductos = [
                 {
                     titulo: "Campera Harry Potter",
                     descripcion: "Campera de HP",
@@ -33,14 +35,10 @@ const listaProductos = [
                     precio: 2599
 }]
 
-
-
-
-
-export default function ListadoProductos (){
     return (
         <section className="todosproductos">
             {listaProductos.map((producto)=>{
+                const {titulo, descripcion, precio} = producto;
                 return (
                    <Producto producto= {producto}/>
                 );
@@ -48,3 +46,69 @@ export default function ListadoProductos (){
         </section>
     )
 }
+
+
+
+/* 
+export default function ItemList(){
+    const [items, setItems] = useState([])
+    
+    useEffect(() => {
+        const tarea = new Promise ((resolve, reject) => {
+            const listaProductos = [
+                {
+                    titulo: "Campera Harry Potter",
+                    descripcion: "Campera de HP",
+                    precio: 2599
+                }, 
+                {
+                    titulo: "Body Hogwarts",
+                    descripcion: "Body con escudo de Hogwarts",
+                    precio: 1059
+                },
+                {
+                    titulo: "Bola'Harry'",
+                    descripcion: "Bola de nieve de Harry Potter",
+                    precio: 799
+                },
+                {
+                    titulo: "Buzo Griffindor",
+                    descripcion: "Buzo con escudo de Griffindor",
+                    precio: 2599
+                },
+                {
+                    titulo: "Buzo Harry Potter",
+                    descripcion: "Buzo rayo y lentes 'Harry Potter'",
+                    precio: 2599
+                }]
+       
+
+            setTimeout (() => {
+                resolve(listaProductos)
+            }, 2000);
+        });
+
+        tarea
+            .then(
+                resolve => {
+                    setItems(resolve)
+                }, 
+                reject => {
+                    console.log ("Error", reject)
+                }
+            )
+    }, []);
+
+    return(
+        <div>
+           <section className="listaProductos">
+                {listaProductos.map((producto)=>{
+                    return <Item producto = {producto}/>   
+    })}
+    </section>
+    )
+        </div>
+        
+    );
+}
+ */
