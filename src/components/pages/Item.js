@@ -1,19 +1,21 @@
 import React from 'react'
 import ItemCount from './ItemCount';
+import { Link } from 'react-router-dom'
 import '../css/Item.css'
 
 
-export default function Producto (props){
-   
-    const {titulo, descripcion, precio, img} = props.producto;
+export default function Item ({id, titulo, descripcion, precio, img, stock}){
+ 
     return(
-        <section className="producto">
-            <h1 className="nombreProducto">{titulo}</h1>
-            <h2 className="descripcionProducto">{descripcion}</h2>
-            <h2 className="precioProducto">{precio}</h2>
-            <img src={img} className="fotoProducto"/>
-            <ItemCount />
+        <div className="producto">
+            <Link to='/' className='linkCard'>
+                <h2 className="nombreProducto">{titulo}</h2>
+                <h2 className="descripcionProducto">{descripcion}</h2>
+                <h2 className="precioProducto">{precio}</h2>
+                <img src={img} className="fotoProducto" alt="Foto"/>
+            </Link>
+            <ItemCount stock = {stock} initial = {1}/>
             
-        </section>
+        </div>
     )
 }
